@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html { scroll-behavior: smooth; }
 
 * { margin: 0; padding: 0; }
@@ -5,4 +7,71 @@ html { scroll-behavior: smooth; }
 body {
     background-color: #222;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    color: #42c5f4;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: .5em;
+}
+
+header nav #logo {
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav #logo a {
+    height: 2.5em;
+    width: 3em;
+}
+
+header nav #logo a img {
+    height: 100%;
+}
+
+header nav a {
+    color: #eee;
+}
+
+header nav #logo #menuicon {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+
+    height: 2em;
+    width: 2.5em;
+}
+
+header nav #logo #menuicon span {
+    display: block;
+    width: 100%;
+    height: .4em;
+    background-color: #eee;
+}
+
+header nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+header nav ul li {
+    display: block;
+    padding: 0 1.5em;
+}
+
+header nav a {
+    color: #eee;
 }
