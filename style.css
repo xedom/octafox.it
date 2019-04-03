@@ -26,6 +26,8 @@ header nav {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
+    transition: height 1s;
 }
 header nav.exp {
     height: 100vh;
