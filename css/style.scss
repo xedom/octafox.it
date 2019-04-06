@@ -155,6 +155,15 @@ header {
     }
 }
 
+body::-webkit-scrollbar {
+    background-color: #151515;
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: #252525;
+}
+
 main {
     width: 100%;
 
@@ -169,7 +178,7 @@ main {
 
         p {
             margin: 0 auto;
-            max-width: 40em;
+            width: 90%;
         }
     }
 
@@ -181,4 +190,22 @@ main {
         background-color: #111;
     }
 
+    section#contattaci {
+        form {
+            margin: 0 auto;
+
+            label, input, textarea {
+                margin: 0 auto;
+                display: block;
+                width: 90%;
+                text-align: left;
+                padding: .4em 0;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            input, textarea {
+                border-radius: 5px;
+            }
+        }
+    }
 }
