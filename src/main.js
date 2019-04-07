@@ -1,4 +1,4 @@
-console.log('ok');
+const style = require('./css/style.scss');
 
 const navButton = document.querySelector('header nav #logo #menuicon');
 const navContainer = document.querySelector('header nav');
