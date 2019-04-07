@@ -27,6 +27,11 @@ module.exports = {
                     'file-loader?name=[name].[ext]&outputPath=img',
                     'image-webpack-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
             }
         ]
     },
