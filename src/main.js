@@ -1,4 +1,3 @@
-// const style = require('./css/style.scss');
 import './css/style.scss';
 
 window.addEventListener('load', function () {
