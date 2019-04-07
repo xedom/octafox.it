@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     mode: 'development',
@@ -12,11 +13,13 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    "css-loader",
-                    "sass-loader"
-                ]
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        "css-loader",
+                        "sass-loader"
+                    ]
+                })
             }
         ]
     },
@@ -32,6 +35,11 @@ module.exports = {
                 useShortDoctype: true
             },
             favicon: './src/favicon.ico'
+        }),
+        new ExtractTextPlugin({
+            filename: "style.css",
+            disable: false,
+            allChunks: true
         })
     ]
 }
