@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
     navButton.addEventListener('click', (x) => {
         if (navContainer.classList.contains('exp')) {
             console.log(navContainer.classList.contains('exp'));
-            navContainer.classList.remove('exp'),
+            navContainer.classList.remove('exp');
         } else {
             console.log(navContainer.classList.contains('exp'));
             navContainer.classList.add('exp');
