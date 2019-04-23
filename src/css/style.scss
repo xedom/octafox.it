@@ -220,6 +220,32 @@ main {
         }
     }
 
+    section#teams {
+        ul {
+            list-style-type: none;
+
+            li {
+                margin: 5px;
+
+                display: flex;
+                align-items: center;
+
+                padding: 0 2em;
+
+                cursor: pointer;
+
+                img {
+                    height: 40px;
+                    margin: 5px 10px;
+                }
+            }
+
+            li:hover {
+                background-color: #171717;
+            }
+        }
+    }
+
     section#contattaci {
         form {
             margin: 0 auto;
