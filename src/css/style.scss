@@ -179,6 +179,22 @@ main {
         background-color: #111;
     }
 
+    section#community {
+        i {
+            color: #eee;
+
+            margin: 20px;
+            padding: .1em;
+            cursor: pointer;
+
+            transition: color .2s;
+        }
+        
+        i:hover {
+            color: #42c5f4;
+        }
+    }
+
     section#contattaci {
         form {
             margin: 0 auto;
