@@ -195,6 +195,31 @@ main {
         }
     }
 
+    section#progetti {
+        .cards {
+            width: 100%;
+
+            .card {
+                background-color: #111;
+
+                width: 90%;
+                margin: 20px auto;
+
+                padding: 2em;
+                border-radius: 1.5%;
+
+                img {
+                    border-radius: 100%;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    margin: .5em 0;
+                }
+            }
+        }
+    }
+
     section#contattaci {
         form {
             margin: 0 auto;
