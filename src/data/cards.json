@@ -1,0 +1,9 @@
+{
+    "progetti": [
+        {
+            "image": "./img/logo.png",
+            "title": "Server Military",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda totam, quidem quam ducimus asperiores."
+        }
+    ]
+}
