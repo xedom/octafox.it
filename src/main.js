@@ -48,9 +48,6 @@ function createCard({ image, title, description }) {
     const ccCard = document.createElement('DIV');
     ccCard.className = 'card';
     const cccImg = document.createElement('IMG');
-    console.log(image);
-    console.log(title);
-    console.log(description);
     cccImg.src = image;
 
     const cccTit = document.createElement('H3');
