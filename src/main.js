@@ -10,4 +10,8 @@ function menuSlider() {
         if (navContainer.classList.contains('exp')) navContainer.classList.remove('exp');
         else navContainer.classList.add('exp');
     });
-}
+};
+
+function addMenuItem() {
+    
+};
