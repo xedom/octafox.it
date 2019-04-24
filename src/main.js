@@ -15,3 +15,7 @@ function menuSlider() {
 function addMenuItem() {
     
 };
+
+function createCard({ image, title, description }) {
+
+};
