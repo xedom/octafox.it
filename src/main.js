@@ -12,6 +12,7 @@ window.addEventListener('load', init);
 
 function init() {
     navButton.addEventListener('click', menuSlider);
+    navItemsContainer.addEventListener('click', hideMenu);
 
     addMenuItem();
     createCard(cards.progetti[0]);
@@ -20,6 +21,12 @@ function init() {
 function menuSlider(x) {
     if (navContainer.classList.contains('exp')) navContainer.classList.remove('exp');
     else navContainer.classList.add('exp');
+};
+
+function hideMenu(x) {
+    if (x.target.tagName === 'A') {
+        navContainer.classList.remove('exp');
+    };
 };
 
 function addMenuItem() {
