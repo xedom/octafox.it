@@ -11,14 +11,15 @@ const sProgetti = document.querySelector('section#progetti .content .cards');
 window.addEventListener('load', init);
 
 function init() {
-    navButton.addEventListener('click', x => {
-        if (navContainer.classList.contains('exp')) navContainer.classList.remove('exp');
-        else navContainer.classList.add('exp');
-    });
+    navButton.addEventListener('click', menuSlider);
 
     addMenuItem();
-
     createCard(cards.progetti[0]);
+};
+
+function menuSlider(x) {
+    if (navContainer.classList.contains('exp')) navContainer.classList.remove('exp');
+    else navContainer.classList.add('exp');
 };
 
 function addMenuItem() {
