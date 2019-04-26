@@ -1,12 +1,14 @@
 import './css/style.scss';
 
 import cards from './data/cards.json';
+import teams from './data/teams.json';
 
 const navContainer = document.querySelector('header nav');
 const navButton = navContainer.querySelector('#logo #menuicon');
 const navItemsContainer = navContainer.querySelector('ul');
 const sections = document.querySelectorAll('main section');
 const sProgetti = document.querySelector('section#progetti .content .cards');
+const sTeams = document.querySelector('section#teams .content ul');
 
 window.addEventListener('load', init);
 
@@ -16,6 +18,7 @@ function init() {
 
     addMenuItem();
     createCard(cards.progetti[0]);
+    createItem(sTeams, teams.teams);
 };
 
 function menuSlider(x) {
@@ -61,4 +64,23 @@ function createCard({ image, title, description }) {
     ccCard.appendChild(cccDes);
 
     sProgetti.appendChild(ccCard);
+};
+
+function createItem(container, teams) {
+    container.innerHTML = "";
+
+    teams.forEach(team => {
+        const li = document.createElement('LI');
+        const img = document.createElement('IMG');
+        const span = document.createElement('span');
+
+        img.src = team.logo;
+        span.textContent += team.name;
+
+        li.appendChild(img);
+        li.appendChild(span);
+
+        container.appendChild(li);
+    });
+
 };

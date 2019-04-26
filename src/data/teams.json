@@ -1,0 +1,36 @@
+{
+    "teams": [
+        {
+            "logo": "./img/logo.png",
+            "name":"The Howls Gaming"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"Kernel eSports"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"Fooking Lazur Sight"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"Demacia"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"Contractors"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"ENCLAVE CLAN"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"WolfGang"
+        },
+        {
+            "logo": "./img/logo.png",
+            "name":"Vortex"
+        }
+    ]
+}
