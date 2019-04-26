@@ -16,7 +16,7 @@ function init() {
     navButton.addEventListener('click', menuSlider);
     navItemsContainer.addEventListener('click', hideMenu);
 
-    addMenuItem();
+    addMenuItemByID(navItemsContainer, sections);
     createCard(sProgetti, cards.progetti);
     createItem(sTeams, teams.teams);
 };
@@ -32,16 +32,16 @@ function hideMenu(x) {
     };
 };
 
-function addMenuItem() {
-    navItemsContainer.innerHTML = "";
+function addMenuItemByID(container, sect) {
+    container.innerHTML = "";
 
-    sections.forEach(menuLink => {
+    sect.forEach(menuLink => {
         const li = document.createElement('LI');
         const a = document.createElement('A');
         a.href = `#${menuLink.id}`;
         a.textContent = (menuLink.id).toUpperCase();
         li.appendChild(a);
-        navItemsContainer.appendChild(li);
+        container.appendChild(li);
     });
 };
 
