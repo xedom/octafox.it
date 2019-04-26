@@ -62,8 +62,8 @@ function createCard(container, cards) {
         ccCard.appendChild(cccImg);
         ccCard.appendChild(cccTit);
         ccCard.appendChild(cccDes);
+
         container.appendChild(ccCard);
-        
     });
 };
 
@@ -71,15 +71,15 @@ function createItem(container, teams) {
     container.innerHTML = "";
 
     teams.forEach(team => {
-        const li = document.createElement('LI');
-        const img = document.createElement('IMG');
-        const span = document.createElement('SPAN');
+        const tcLi = document.createElement('LI');
+        const tcImg = document.createElement('IMG');
+        const tcSpan = document.createElement('SPAN');
 
         img.src = team.logo;
         span.textContent += team.name;
 
-        li.appendChild(img);
-        li.appendChild(span);
+        tcLi.appendChild(tcImg);
+        tcLi.appendChild(tcSpan);
 
         container.appendChild(li);
     });
