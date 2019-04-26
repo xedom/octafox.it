@@ -17,7 +17,7 @@ function init() {
     navItemsContainer.addEventListener('click', hideMenu);
 
     addMenuItem();
-    createCard(cards.progetti[0]);
+    createCard(sProgetti, cards.progetti);
     createItem(sTeams, teams.teams);
 };
 
@@ -45,25 +45,26 @@ function addMenuItem() {
     });
 };
 
-function createCard({ image, title, description }) {
-    sProgetti.innerHTML = "";
+function createCard(container, cards) {
+    container.innerHTML = "";
 
-    const ccCard = document.createElement('DIV');
-    ccCard.className = 'card';
-    const cccImg = document.createElement('IMG');
-    cccImg.src = image;
+    cards.forEach(card => {
+        const ccCard = document.createElement('DIV');
+        const cccImg = document.createElement('IMG');
+        const cccTit = document.createElement('H3');
+        const cccDes = document.createElement('P');
 
-    const cccTit = document.createElement('H3');
-    cccTit.textContent = title;
+        ccCard.className = 'card';
+        cccImg.src = card.image;
+        cccTit.textContent = card.title;
+        cccDes.textContent = card.description;
 
-    const cccDes = document.createElement('P');
-    cccDes.textContent = description;
-
-    ccCard.appendChild(cccImg);
-    ccCard.appendChild(cccTit);
-    ccCard.appendChild(cccDes);
-
-    sProgetti.appendChild(ccCard);
+        ccCard.appendChild(cccImg);
+        ccCard.appendChild(cccTit);
+        ccCard.appendChild(cccDes);
+        container.appendChild(ccCard);
+        
+    });
 };
 
 function createItem(container, teams) {
@@ -72,7 +73,7 @@ function createItem(container, teams) {
     teams.forEach(team => {
         const li = document.createElement('LI');
         const img = document.createElement('IMG');
-        const span = document.createElement('span');
+        const span = document.createElement('SPAN');
 
         img.src = team.logo;
         span.textContent += team.name;
@@ -82,5 +83,4 @@ function createItem(container, teams) {
 
         container.appendChild(li);
     });
-
 };
