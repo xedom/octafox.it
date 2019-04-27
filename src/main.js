@@ -75,8 +75,8 @@ function createItem(container, teams) {
         const tcImg = document.createElement('IMG');
         const tcSpan = document.createElement('SPAN');
 
-        img.src = team.logo;
-        span.textContent += team.name;
+        tcImg.src = team.logo;
+        tcSpan.textContent += team.name;
 
         tcLi.appendChild(tcImg);
         tcLi.appendChild(tcSpan);
