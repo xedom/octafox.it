@@ -1,0 +1,32 @@
+
+main {
+    width: 100%;
+
+    section {
+        padding: 10em 0;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 90%;
+        }
+    }
+
+    section:nth-child(even) {
+        // background-image: url('../img/img1.jpg');
+        // background-size: cover;
+        // background-position: center;
+
+        background-color: #111;
+    }
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+}

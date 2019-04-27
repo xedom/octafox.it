@@ -1,4 +1,9 @@
-import './css/style.scss';
+import './css/community.scss';
+import './css/contattaci.scss';
+import './css/header.scss';
+import './css/main.scss';
+import './css/progetti.scss';
+import './css/teams.scss';
 
 import cards from './data/cards.json';
 import teams from './data/teams.json';
