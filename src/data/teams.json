@@ -1,36 +1,52 @@
 {
     "teams": [
         {
+            "name":"The Howls Gaming",
             "logo": "./img/logo.png",
-            "name":"The Howls Gaming"
+            "tag": "thg",
+            "site": "https://octafox.it/thg"
         },
         {
+            "name":"Kernel eSports",
             "logo": "./img/logo.png",
-            "name":"Kernel eSports"
+            "tag": "ke",
+            "site": "https://octafox.it/ke"
         },
         {
+            "name":"Fooking Lazur Sight",
             "logo": "./img/logo.png",
-            "name":"Fooking Lazur Sight"
+            "tag": "fls",
+            "site": "https://octafox.it/fls"
         },
         {
+            "name":"Demacia",
             "logo": "./img/logo.png",
-            "name":"Demacia"
+            "tag": "dem",
+            "site": "https://octafox.it/dem"
         },
         {
+            "name":"Contractors",
             "logo": "./img/logo.png",
-            "name":"Contractors"
+            "tag": "con",
+            "site": "https://octafox.it/con"
         },
         {
+            "name":"ENCLAVE CLAN",
             "logo": "./img/logo.png",
-            "name":"ENCLAVE CLAN"
+            "tag": "ec",
+            "site": "https://octafox.it/ec"
         },
         {
+            "name":"WolfGang",
             "logo": "./img/logo.png",
-            "name":"WolfGang"
+            "tag": "wg",
+            "site": "https://octafox.it/wg"
         },
         {
+            "name":"Vortex",
             "logo": "./img/logo.png",
-            "name":"Vortex"
+            "tag": "vor",
+            "site": "https://octafox.it/vor"
         }
     ]
 }

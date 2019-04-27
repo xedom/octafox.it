@@ -74,13 +74,17 @@ function createItem(container, teams) {
         const tcLi = document.createElement('LI');
         const tcImg = document.createElement('IMG');
         const tcSpan = document.createElement('SPAN');
+        const tcA = document.createElement('A');
 
+        tcA.href = team.site;
+        tcLi.id = team.tag;
         tcImg.src = team.logo;
         tcSpan.textContent += team.name;
 
         tcLi.appendChild(tcImg);
         tcLi.appendChild(tcSpan);
+        tcA.appendChild(tcLi);
 
-        container.appendChild(tcLi);
+        container.appendChild(tcA);
     });
 };
