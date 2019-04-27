@@ -81,6 +81,6 @@ function createItem(container, teams) {
         tcLi.appendChild(tcImg);
         tcLi.appendChild(tcSpan);
 
-        container.appendChild(li);
+        container.appendChild(tcLi);
     });
 };
