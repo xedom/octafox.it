@@ -1,28 +1,8 @@
 section#teams
-    h2 Teams
-    .content
-      ul
+  h2 Teams
+  .content
+    ul
+      each team in teams
         li
-          img(src='./img/logo.png')
-          | The Howls Gaming
-        li
-          img(src='./img/logo.png')
-          | Kernel eSports
-        li
-          img(src='./img/logo.png')
-          | Fooking Lazur Sight
-        li
-          img(src='./img/logo.png')
-          | Demacia
-        li
-          img(src='./img/logo.png')
-          | Contractors
-        li
-          img(src='./img/logo.png')
-          | ENCLAVE CLAN
-        li
-          img(src='./img/logo.png')
-          | WolfGang
-        li
-          img(src='./img/logo.png')
-          | Vortex
+          img(src=team.logo)
+          | [#{team.tag.toUpperCase()}] #{team.name} { #{team.site} }
