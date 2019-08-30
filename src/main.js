@@ -33,18 +33,4 @@ function init() {
     main.innerHTML += templateProjects();
     main.innerHTML += templateTeams();
     main.innerHTML += templateContattaci();
-
-    // navButton.addEventListener('click', menuSlider);
-    // navItemsContainer.addEventListener('click', hideMenu);
-};
-
-function menuSlider(x) {
-    if (navContainer.classList.contains('exp')) navContainer.classList.remove('exp');
-    else navContainer.classList.add('exp');
-};
-
-function hideMenu(x) {
-    if (x.target.tagName === 'A') {
-        navContainer.classList.remove('exp');
-    };
 };
