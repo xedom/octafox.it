@@ -1,25 +1,25 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-module.exports = {
+config = {
     mode: 'development',
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
+    devServer: {
+      port: 3000,
+    },
     module: {
         rules: [
             {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        "css-loader",
-                        "sass-loader"
-                    ]
-                })
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|jpg|gif)$/,
@@ -32,7 +32,11 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
-            }
+            },
+            { 
+                test: /\.pug$/,
+                use: ["pug-loader"]
+            },
         ]
     },
     optimization: {
@@ -40,7 +44,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './src/index.pug',
             minify: {
                 collapseWhitespace: true,
                 removeComments: true,
@@ -50,11 +54,12 @@ module.exports = {
                 useShortDoctype: true
             },
             favicon: './src/favicon.ico'
-        }),
-        new ExtractTextPlugin({
-            filename: "style.css",
-            disable: false,
-            allChunks: true
         })
     ]
+}
+
+module.exports = (env, arg) => {
+    if (arg.mode === 'dev') {}
+    if (arg.mode === 'prod') {}
+    return config;
 }
