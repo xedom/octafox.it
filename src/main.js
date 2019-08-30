@@ -7,8 +7,8 @@ import './css/progetti.scss';
 import './css/teams.scss';
 import './css/cover.scss';
 
-import cards from './data/cards.json';
-import teams from './data/teams.json';
+import projectsData from './data/projects.json';
+import teamsData from './data/teams.json';
 
 import templateChisiamo from './components/chisiamo.pug';
 import templateCommunitylinks from './components/communitylinks.pug';
@@ -30,7 +30,9 @@ function init() {
 
     main.innerHTML += templateChisiamo();
     main.innerHTML += templateCommunitylinks();
-    main.innerHTML += templateProjects();
-    main.innerHTML += templateTeams();
+    main.innerHTML += templateProjects(projectsData);
+    main.innerHTML += templateTeams(teamsData);
     main.innerHTML += templateContattaci();
+
+    console.log(projectsData)
 };
