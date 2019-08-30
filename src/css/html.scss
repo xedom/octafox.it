@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { color: #42c5f4; text-decoration: none; display: inline-block; }
+
+body {
+    background-color: #222;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+    height: 100vh;
+    width: 100%;
+}
