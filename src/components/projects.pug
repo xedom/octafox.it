@@ -2,7 +2,8 @@ section#progetti
     h2 Progetti
     .content
       .cards
-         .card
-            img(src='./img/logo.png')
-            h3 Server Military
-            p test test test test test test test test test
+         each project in projects
+            .card
+               img(src=project.image)
+               h3 #{project.title}
+               p #{project.description}
