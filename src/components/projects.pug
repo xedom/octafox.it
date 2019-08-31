@@ -1,9 +1,10 @@
 section#progetti
-    h2 Progetti
-    .content
-      .cards
-         each project in projects
-            .card
-               img(src=project.image)
-               h3 #{project.title}
-               p #{project.description}
+   .container
+      h2 Progetti
+      .content
+         .cards
+            each project in projects
+               .card
+                  img(src=project.image)
+                  h3 #{project.title}
+                  p #{project.description}

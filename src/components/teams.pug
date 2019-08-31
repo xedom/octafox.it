@@ -1,8 +1,9 @@
 section#teams
-  h2 Teams
-  .content
-    ul
-      each team in teams
-        li
-          img(src=team.logo)
-          | [#{team.tag.toUpperCase()}] #{team.name} { #{team.site} }
+  .container
+    h2 Teams
+    .content
+      ul
+        each team in teams
+          li
+            img(src=team.logo)
+            | [#{team.tag.toUpperCase()}] #{team.name} { #{team.site} }
