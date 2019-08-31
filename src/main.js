@@ -7,6 +7,8 @@ import './css/progetti.scss';
 import './css/teams.scss';
 import './css/cover.scss';
 
+import './img/logo.png';
+
 import projectsData from './data/projects.json';
 import teamsData from './data/teams.json';
 
@@ -24,7 +26,6 @@ const main = document.querySelector('main');
 window.addEventListener('load', init);
 
 function init() {
-
     header.innerHTML += templateNavbar();
     header.innerHTML += templateCover();
 
@@ -33,6 +34,4 @@ function init() {
     main.innerHTML += templateProjects(projectsData);
     main.innerHTML += templateTeams(teamsData);
     main.innerHTML += templateContattaci();
-
-    console.log(projectsData)
 };
