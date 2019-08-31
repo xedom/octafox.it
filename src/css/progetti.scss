@@ -1,16 +1,14 @@
 section#progetti {
     .cards {
         width: 100%;
+        
+        margin: 30px auto 40px;
 
         display: flex;
         justify-content: space-around;
 
         .card {
             background-color: #111;
-
-            width: 90%;
-            margin: 20px auto;
-
             width: 25em;
 
             padding: 2em;
