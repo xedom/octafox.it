@@ -3,11 +3,13 @@ section#teams {
     ul {
         list-style-type: none;
 
-        width: 400px;
+        width: 800px;
         margin: 0 auto;
 
         display: flex;
         flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center;
 
         li {
             margin: 5px;
@@ -16,6 +18,8 @@ section#teams {
             align-items: center;
 
             padding: 0 2em;
+
+            width: 40%;
 
             cursor: pointer;
 
