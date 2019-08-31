@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 html { scroll-behavior: smooth; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
 a { color: #42c5f4; text-decoration: none; display: inline-block; cursor: pointer; }
 
 body {
     background-color: #222;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 
     height: 100vh;

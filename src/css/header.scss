@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 header {
     background-color: #333;
     height: 100vh;
 
     nav {
-        background-color: #eee;
         width: 100%;
         position: fixed;
     
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
