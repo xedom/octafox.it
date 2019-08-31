@@ -1,13 +1,13 @@
 section#teams {
+
     ul {
         list-style-type: none;
 
+        width: 400px;
+        margin: 0 auto;
+
         display: flex;
         flex-direction: column;
-
-        a {
-            color: #eee;
-        }
 
         li {
             margin: 5px;
