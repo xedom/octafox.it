@@ -8,7 +8,7 @@ header {
         width: 100%;
         position: fixed;
     
-        z-index: 1;
+        z-index: 2;
 
         &.withbg {
             background-color: #eee;
@@ -22,8 +22,8 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    
-        transition: height .2s;
+
+        transition: 1s;
 
         #logo {
             padding: 0 1em;

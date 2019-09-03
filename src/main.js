@@ -24,6 +24,7 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 
 window.addEventListener('load', init);
+window.onscroll = scrollEvent;
 
 function init() {
     header.innerHTML += templateNavbar();
@@ -34,4 +35,31 @@ function init() {
     main.innerHTML += templateProjects(projectsData);
     main.innerHTML += templateTeams(teamsData);
     main.innerHTML += templateContattaci();
+};
+
+function scrollEvent(e) {
+    const nav = header.getElementsByTagName('nav')[0];
+    if (window.pageYOffset > 100) {
+        navbarChanger(nav,true);
+    } else {
+        navbarChanger(nav,false);
+    }
+};
+
+
+function navbarChanger(navbar, state) {
+    const links = Array.from(navbar.getElementsByTagName('a'));
+
+    if (state) {
+        navbar.classList.add('withbg');
+        links.forEach(link => {
+            link.classList.add('withbg');
+        });
+    } else {
+        navbar.classList.remove('withbg');
+        links.forEach(link => {
+            link.classList.remove('withbg');
+        });
+    }
+
 };
