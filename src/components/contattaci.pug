@@ -2,7 +2,7 @@ section#contattaci
   .container
     h2 Contattaci
     .content
-      form
+      form(action="http://octafox.it:8001/api/contact", method="post")#contactForm
         label(for='user') Username
         input#user(type='text' name='user')
         label(for='email') E-Mail

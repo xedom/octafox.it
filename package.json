@@ -4,7 +4,8 @@
   "description": "OctaFox Website",
   "scripts": {
     "devLive": "webpack-dev-server",
-    "build": "rm -rf dist && webpack -p"
+    "build": "rm -rf dist && webpack -p",
+    "api": "node smallapi/api.js"
   },
   "repository": {
     "type": "git",
@@ -43,5 +44,8 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
