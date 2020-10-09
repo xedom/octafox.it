@@ -3,7 +3,7 @@ section#teams {
     ul {
         list-style-type: none;
 
-        width: 800px;
+        max-width: 800px;
         margin: 0 auto;
 
         display: flex;
@@ -12,14 +12,12 @@ section#teams {
         justify-content: center;
 
         li {
-            margin: 5px;
-
             display: flex;
             align-items: center;
 
+            width: 20em;
+            margin: 5px;
             padding: 0 2em;
-
-            width: 40%;
 
             cursor: pointer;
 

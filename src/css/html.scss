@@ -8,12 +8,11 @@ body {
     background-color: #222;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-
     height: 100vh;
     width: 100%;
 }
 
 .container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }

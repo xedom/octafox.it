@@ -1,26 +1,32 @@
 section#progetti {
     .cards {
         width: 100%;
-        
-        margin: 30px auto 40px;
 
         display: flex;
-        justify-content: space-around;
-
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        
         .card {
             background-color: #111;
-            width: 45%;
+            width: 18em;
 
-            padding: 2em;
-            border-radius: 1.5%;
+            margin: 1em;
+            padding: 5em 2em;
+            border-radius: 1em;
 
             img {
-                border-radius: 100%;
+                width: 8em;
+                border-radius: 5em;
             }
 
             h3 {
-                font-size: 30px;
-                margin: .5em 0;
+                font-size: 1.5em;
+                margin: 1em 0;
+            }
+
+            p {
+                font-size: .8em;
             }
         }
     }

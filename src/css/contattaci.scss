@@ -8,14 +8,14 @@ section#contattaci {
             display: block;
             width: 100%;
             text-align: left;
-            padding: .5em;
+            padding: .5em 1em;
             font-family: 'Roboto', sans-serif;
             outline: none;
             border: none;
         }
 
         input, textarea {
-            border-radius: 5px;
+            border-radius: 1em;
         }
 
         input[type="submit"] {

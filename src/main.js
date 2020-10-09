@@ -6,6 +6,7 @@ import './css/main.scss';
 import './css/progetti.scss';
 import './css/teams.scss';
 import './css/cover.scss';
+import './css/chisiamo.scss';
 
 import './img/logo.png';
 
