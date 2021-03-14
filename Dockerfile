@@ -1,12 +1,15 @@
 
-FROM node:12 as siteBuild
+FROM node:14 as siteBuild
 
 LABEL maintainer Kaj Oskar Rusilowski
 
 WORKDIR /web
-COPY . .
 
-RUN npm install && npm run build
+COPY package*.json ./
+RUN npm install
+
+COPY . /web
+RUN npm run build
 
 
 FROM nginx:alpine
@@ -16,6 +19,5 @@ COPY --from=siteBuild /web/dist /usr/share/nginx/html
 
 EXPOSE 80
 EXPOSE 443
-
 
 CMD ["nginx", "-g", "daemon off;"]
